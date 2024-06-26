@@ -4,20 +4,21 @@ project:
 
 book:
   title: A quarto book for technical documentations
+  subtitle: A demonstration how quarto books can be used for documentation and collaboration
   date: today
   date-format: long
   author:
     - name: Damian Oswald
-      affiliation: Swiss Federal Institute of Technology, Zürich
+      affiliation: Federal Office for Agriculture FOAG
       orcid: 0009-0008-0658-7697
   chapters:
     - index.qmd
     - demo.qmd
     - last.qmd
-  repo-url: https://github.com/damian-oswald/wiki-test
+  repo-url: https://github.com/damian-oswald/test-wiki
   repo-actions: [source, issue]
   page-footer:
-    border: false
+    border: true
     left: © 2023, Damian Oswald
     right: 
     - icon: github
