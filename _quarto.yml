@@ -16,7 +16,7 @@ book:
     - index.qmd
     - demo.qmd
     - last.qmd
-  repo-url: https://github.com/damian-oswald/test-wiki
+  repo-url: https://github.com/damian-oswald/wiki-test
   repo-actions: [source, issue]
   page-footer:
     border: true
