@@ -14,6 +14,8 @@ book:
     - index.qmd
     - demo.qmd
     - last.qmd
+  repo-url: https://github.com/damian-oswald/wiki-test
+  repo-actions: [source, issue]
   page-footer:
     border: false
     left: © 2023, Damian Oswald
@@ -27,5 +29,3 @@ format:
   html:
     theme: cosmo
     format-links: pdf
-  docx:
-    output-file: quarto-technical-documentation.docx
