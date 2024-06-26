@@ -1,0 +1,5 @@
+---
+title: A last page
+---
+
+Aaand that's it. This is the last page of this wiki.

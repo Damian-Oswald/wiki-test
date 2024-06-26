@@ -1,0 +1,107 @@
+---
+title: Some demonstration of quarto books
+mermaid: 
+  theme: neutral
+---
+
+## Emojis
+
+To insert emojis, simply type `:heart:`. Use whatever name the emoji has and it will be rendered correspondingly ❤️
+
+Here, I want to write something else. So that I am 😄!
+
+## Tables
+
+Here's an example of a markdown table using pipe syntax, representing a list of programming languages and their respective release years:
+
+| Programming Language | Release Year | Creator                |
+|----------------------|--------------|------------------------|
+| Python               | 1991         | Guido van Rossum       |
+| JavaScript           | 1995         | Brendan Eich           |
+| Java                 | 1995         | James Gosling          |
+| C++                  | 1985         | Bjarne Stroustrup      |
+| Ruby                 | 1995         | Yukihiro Matsumoto     |
+| Swift                | 2014         | Apple Inc.             |
+| Go                   | 2009         | Robert Griesemer et al |
+
+Feel free to use or modify this table as needed!
+
+## Mermaid diagrams
+
+This diagram visualizes the fundamental structure of the product catalog without the junction tables, i.e. containing many-to-many relationships.
+
+:::{.column-page}
+
+```{mermaid}
+erDiagram
+    plant_protection_product }o--o{ indication: ""
+    indication ||..|o indication_pathogen: ""
+    indication ||..|o indication_botanical_crop: ""
+    mail_address o|..|o plant_protection_product: ""
+    plant_protection_product ||..|o seed_treatment: ""
+    dressed_seed }o--o{ seed_treatment: ""
+    dressed_seed ||..|o dressed_seed_variety: ""
+    dressed_seed }o--o{ ingredient: ""
+    ingredient }o--o{ plant_protection_product: ""
+    ingredient o|..|o substance: ""
+    substance ||..|o substance_allowed_units: ""
+    substance }o--o{ allowed_for: ""
+    fertiliser_product }o--o{ ingredient: ""
+    feedstuff ||..|o feedstuff_intended_for_animal: ""
+    feedstuff ||..|o feedstuff_label: ""
+    feedstuff }o--o{ ingredient: ""
+    ingredient }o--o{ manure_recycling_product: ""
+    manure_recycling_product ||..|o manure_recycling_product_manure_derivation: ""
+```
+
+:::
+
+This Entity-Relationship (ER) diagram represents the structure of a database focused on products, their ingredients, and associated entities available in the digiFLUX system.
+
+## Code blocks
+
+Below is a simple demo Python code that demonstrates a basic program to calculate the factorial of a number using both iterative and recursive methods:
+
+```python
+def factorial_iterative(n):
+    """Calculate factorial of a number iteratively."""
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+def factorial_recursive(n):
+    """Calculate factorial of a number recursively."""
+    if n == 0:
+        return 1
+    else:
+        return n * factorial_recursive(n - 1)
+
+# Input: Number for which factorial is to be calculated
+number = 5
+
+# Calculate factorial using iterative method
+iterative_result = factorial_iterative(number)
+print(f"Factorial of {number} (iterative): {iterative_result}")
+
+# Calculate factorial using recursive method
+recursive_result = factorial_recursive(number)
+print(f"Factorial of {number} (recursive): {recursive_result}")
+```
+
+Here's an explanation for the code above.
+
+1. **Iterative Method (`factorial_iterative`)**:
+   - Initializes `result` to 1.
+   - Loops from 1 to `n`, multiplying `result` by the loop counter `i` in each iteration.
+   - Returns the final `result`.
+
+2. **Recursive Method (`factorial_recursive`)**:
+   - If `n` is 0, returns 1 (base case).
+   - Otherwise, returns `n` multiplied by the factorial of `n-1`.
+
+3. **Main Program**:
+   - Defines a variable `number` to hold the value for which the factorial is to be calculated.
+   - Calls the iterative and recursive factorial functions and prints the results.
+
+You can run this code in any Python environment to see the output for the factorial of 5 using both methods.

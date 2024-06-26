@@ -1,23 +1,31 @@
 project:
   type: book
+  output-dir: docs
 
 book:
-  title: "A Test Quarto Book"
-  author: "Norah Jones"
-  date: "26.6.2024"
+  title: A quarto book for technical documentations
+  date: today
+  date-format: long
+  author:
+    - name: Damian Oswald
+      affiliation: Swiss Federal Institute of Technology, Zürich
+      orcid: 0009-0008-0658-7697
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
-    - references.qmd
-
-bibliography: references.bib
-
+    - demo.qmd
+    - last.qmd
+  page-footer:
+    border: false
+    left: © 2023, Damian Oswald
+    right: 
+    - icon: github
+      href: https://github.com/Damian-Oswald/wiki-test
+    - icon: envelope-fill
+      href: mailto:damian.oswald@protonmail.com
+    
 format:
   html:
     theme: cosmo
-  pdf:
-    documentclass: scrreprt
-
-
-
+    format-links: pdf
+  docx:
+    output-file: quarto-technical-documentation.docx
