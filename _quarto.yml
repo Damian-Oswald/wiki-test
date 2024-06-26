@@ -11,6 +11,7 @@ book:
     - name: Damian Oswald
       affiliation: Federal Office for Agriculture FOAG
       orcid: 0009-0008-0658-7697
+  abstract: This document presents a comprehensive demonstration of the versatile capabilities of Quarto books through a series of practical examples. By leveraging Quarto's robust markdown support, we illustrate how to seamlessly integrate emojis, construct informative tables, and create complex diagrams using Mermaid syntax.
   chapters:
     - index.qmd
     - demo.qmd
