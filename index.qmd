@@ -1,14 +1,14 @@
 # Introduction
 
-Welcome to my very first GitHub wiki!
+Welcome to my very first Quarto wiki!
 
 ## What is this wiki for?
 
-This wiki has been created exclusively for the purpose of thoroughly testing and exploring the various functionalities and features that GitHub's wiki platform offers.
+This wiki has been created exclusively for the purpose of thoroughly testing and exploring the various functionalities and features that Quarto's wiki platform offers.
 
-## What can I do in a GitHub Wiki?
+## What can I do in a Quarto Wiki?
 
-A GitHub Wiki is a powerful tool that you can use to enhance your project's documentation and collaboration. Here are some of the key features and actions you can perform in a GitHub Wiki:
+A Quarto Wiki is a powerful tool that you can use to enhance your project's documentation and collaboration. Here are some of the key features and actions you can perform in a Quarto Wiki:
 
 ### Create and Organize Pages
    - **Create Pages:** You can create multiple pages to document different aspects of your project, such as installation guides, API documentation, tutorials, and FAQs.
