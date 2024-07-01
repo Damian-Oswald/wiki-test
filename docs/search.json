@@ -44,7 +44,7 @@
     "href": "demo.html",
     "title": "2  Some demonstration of quarto books",
     "section": "",
-    "text": "2.1 Emojis\nTo insert emojis, simply type :heart:. Use whatever name the emoji has and it will be rendered correspondingly ❤️\nHere, I want to write something else. So that I am 😄!",
+    "text": "2.1 Emojis\nTo insert emojis, simply type :heart:. Use whatever name the emoji has and it will be rendered correspondingly ❤️\nHere, I want to write something else. So that I am 😄!\nAnd of course, images can be embedded effertlessly, as well.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Some demonstration of quarto books</span>"
     ]
