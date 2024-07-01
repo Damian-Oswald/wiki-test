@@ -1,0 +1,32 @@
+/*-- scss:rules --*/
+
+// Override Bootstrap's default list styles
+ol {
+  list-style-type: none;
+  counter-reset: item;
+  padding-left: 15px; /* Adjust the inset size as needed */
+}
+
+ol li {
+  position: relative;
+  counter-increment: item;
+  margin-bottom: 10px;
+  padding-left: 15px; /* Adjust the inset size for the text */
+
+  &::before {
+    content: counter(item);
+    position: absolute;
+    top: 2px; /* Adjust the top position as needed */
+    left: -15px; /* Adjust to match padding-left of the parent li */
+    width: 1.3em;
+    height: 1.3em;
+    line-height: 1.3em;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1em;
+    margin-right: 0.5em;
+  }
+}
+

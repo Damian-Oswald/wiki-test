@@ -26,6 +26,7 @@ book:
       href: https://github.com/Damian-Oswald/wiki-test
     - icon: envelope-fill
       href: mailto:damian.oswald@protonmail.com
+  sharing: [twitter, linkedin]
   comments:
     hypothesis:
       theme: clean
@@ -33,5 +34,5 @@ book:
     
 format:
   html:
-    theme: cosmo
-    format-links: pdf
+    theme: [cosmo, theme.scss]
+    mermaid-theme: neutral
