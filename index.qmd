@@ -15,7 +15,7 @@ A Quarto Wiki is a powerful tool that you can use to enhance your project's docu
    - **Organize Pages:** Arrange pages in a hierarchical structure with nested pages, or use a table of contents to provide easy navigation.
 
 ### Write and Format Content
-   - **Markdown Support:** GitHub Wikis support Markdown, allowing you to format text with headers, lists, links, images, code blocks, and more.
+   - **Markdown Support:** Quarto Wikis support Markdown, allowing you to format text with headers, lists, links, images, code blocks, and more.
    - **HTML Support:** For more advanced formatting, you can also use HTML.
 
 ### Collaborate with Others
