@@ -10,6 +10,10 @@ To insert emojis, simply type `:heart:`. Use whatever name the emoji has and it 
 
 Here, I want to write something else. So that I am 😄!
 
+And of course, images can be embedded effertlessly, as well.
+
+![](agriculture.png)
+
 ## Tables
 
 Here's an example of a markdown table using pipe syntax, representing a list of programming languages and their respective release years:
