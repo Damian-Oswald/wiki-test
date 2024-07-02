@@ -73,7 +73,25 @@ erDiagram
   }
 ```
 
-This Entity-Relationship (ER) diagram represents the structure of a database focused on products, their ingredients, and associated entities available in the digiFLUX system.
+Here's a simple example of a sequence diagram using Mermaid JS. This diagram will illustrate a sequence of interactions between two actors, `System A` and `System B`, with a message exchange:
+
+```mermaid
+sequenceDiagram
+    participant SystemA
+    participant SystemB
+    
+    SystemA ->> SystemB: Message 1
+    SystemB -->> SystemA: Response 1
+    SystemA ->> SystemB: Message 2
+    SystemB -->> SystemA: Response 2
+```
+
+In this sequence diagram:
+- `SystemA` and `SystemB` are the participants (systems) involved in the sequence of interactions.
+- `SystemA ->> SystemB: Message` denotes a message sent from `SystemA` to `SystemB`.
+- `SystemB -->> SystemA: Response` denotes a response message sent from `SystemB` back to `SystemA`.
+
+This example shows a simple sequence where `SystemA` sends two messages (`Message 1` and `Message 2`) to `SystemB`, and `SystemB` responds with `Response 1` and `Response 2` respectively.
 
 ## Code blocks
 
