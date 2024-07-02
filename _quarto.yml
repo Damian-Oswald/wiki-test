@@ -27,6 +27,8 @@ book:
     - icon: envelope-fill
       href: mailto:damian.oswald@protonmail.com
   sharing: [twitter, linkedin]
+  downloads: [pdf]
+  reader-mode: true
   comments:
     hypothesis:
       theme: clean
@@ -36,3 +38,15 @@ format:
   html:
     theme: [cosmo, theme.scss]
     mermaid-theme: neutral
+  pdf:
+    toc: true
+    number-sections: true
+    fontsize: 12pt
+    documentclass: report
+    margin-left: 2cm
+    margin-right: 2cm
+    margin-top: 2cm
+    margin-bottom: 2cm
+    mermaid:
+      theme: neutral
+      mermaid-format: png

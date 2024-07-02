@@ -4,24 +4,63 @@ mermaid:
   theme: neutral
 ---
 
-## Emojis
+## First, a little markdown guide
+
+Hello and welcome! Markdown is a *lightweight markup language* with plain-text formatting syntax. It can be converted into HTML and other formats. Here's a quick demonstration of common markdown features.
+
+You can make text **bold** by wrapping it with two asterisks or underscores. 
+Italics are just as easy! Wrap text with one asterisk or underscore: *Italic Text*.
+
+### Lists
+
+Creating lists is straightforward. There are unordered lists...
+
+- Unordered list item 1
+- Unordered list item 2
+  - Subitem 2.1
+  - Subitem 2.2
+
+...and then there are ordered lists:
+
+1. A first item
+2. A second item
+3. And a last item
+
+### Headers
+
+Headers from H1 to H6 are essential for structure. They're made with `#`:
+
+```md
+# H1 Header
+## H2 Header
+### H3 Header
+```
+
+### Links and Images
+
+Adding a [link](https://www.openai.com) is as simple as wrapping text in brackets followed by the URL in parentheses.
+To add an image, it's very similar but starts with an exclamation:
+
+![This is an image of some agricultural activity in coorporate design.](agriculture.png){#fig-agriculture}
+
+### Quotes and Code
+
+Quotes are also a default part of the markdown syntax.
+
+> This is a blockquote. Use it to highlight important sections.
+
+And so is code. For inline code, use single backticks: `Inline code here`
+For longer code, use triple backticks:
+
+```python
+def hello_world():
+    print("Hello, world!")
+```
+
+### Emojis
 
 To insert emojis, simply type `:heart:`. Use whatever name the emoji has and it will be rendered correspondingly ❤️
-
 Here, I want to write something else. So that I am 😄!
-
-And of course, images can be embedded effertlessly, as well.
-
-![](agriculture.png)
-
-## Numbering
-
-We can number items nicely.
-
-1. This is one item.
-2. This is another item.
-3. This is a third item.
-4. And that is the last item.
 
 ## Tables
 
@@ -46,6 +85,8 @@ Feel free to use or modify @tbl-table as needed!
 This diagram visualizes the fundamental structure of the product catalog without the junction tables, i.e. containing many-to-many relationships.
 
 ```{mermaid}
+%%| label: fig-er
+%%| fig-cap: Example of a simple entity relationship diagram using Mermaid JS.
 erDiagram
   CUSTOMER ||--o{ ORDER : places
   ORDER ||--|{ LINE-ITEM : contains
@@ -75,7 +116,9 @@ erDiagram
 
 Here's a simple example of a sequence diagram using Mermaid JS. This diagram will illustrate a sequence of interactions between two actors, `System A` and `System B`, with a message exchange:
 
-```mermaid
+```{mermaid}
+%%| label: fig-sequence
+%%| fig-cap: Example of a simple sequence diagram using Mermaid JS.
 sequenceDiagram
     participant SystemA
     participant SystemB
@@ -93,7 +136,7 @@ In this sequence diagram:
 
 This example shows a simple sequence where `SystemA` sends two messages (`Message 1` and `Message 2`) to `SystemB`, and `SystemB` responds with `Response 1` and `Response 2` respectively.
 
-## Code blocks
+## Code files
 
 Below is a simple demo Python code that demonstrates a basic program to calculate the factorial of a number using both iterative and recursive methods:
 
