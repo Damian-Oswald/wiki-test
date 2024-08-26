@@ -33,6 +33,8 @@ book:
     hypothesis:
       theme: clean
       openSidebar: false
+    giscus:
+      repo: damian-oswald/wiki-test
     
 format:
   html:
