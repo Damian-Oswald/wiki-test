@@ -30,9 +30,6 @@ book:
   downloads: [pdf]
   reader-mode: true
   comments:
-    hypothesis:
-      theme: clean
-      openSidebar: false
     giscus:
       repo: damian-oswald/wiki-test
     
